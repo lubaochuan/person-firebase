@@ -27,3 +27,5 @@ The code in the [example repo](https://github.com/ProProgramming101/expo-firebas
 
 $ Step 3 run
 `yarn start`
+
+![demo](demo.gif)
