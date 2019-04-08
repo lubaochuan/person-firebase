@@ -25,7 +25,7 @@ export default {
 # Step 3 copy code
 The code in the [example repo](https://github.com/ProProgramming101/expo-firebase-redux-starter) is outdated. Modernize it with newer versions of packages.
 
-$ Step 3 run
+# Step 3 run
 `yarn start`
 
 ![demo](demo.gif)
