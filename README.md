@@ -4,5 +4,5 @@ Example redux with firebase app from [this article](https://itnext.io/simple-fir
 ```
 expo init todoapp2 --template blank@sdk-32 --yarn
 cd expo
-yart add -S redux react-navigation react-redux redux-thunk firebase
+yart add -S redux react-navigation redux react-redux redux-thunk firebase
 ```
