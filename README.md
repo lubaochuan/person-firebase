@@ -2,9 +2,9 @@ Example redux with firebase app from [this article](https://itnext.io/simple-fir
 
 # Step 1 setup project
 ```
-expo init todoapp2 --template blank@sdk-32 --yarn
+expo init person-firebase --template blank@sdk-32 --yarn
 cd expo
-yart add -S redux react-navigation redux react-redux redux-thunk firebase
+yart add -S react-navigation redux react-redux redux-thunk firebase
 ```
 
 # Step 2 setup firebase
