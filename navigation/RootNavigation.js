@@ -13,7 +13,6 @@ const RootStackNavigator = createStackNavigator(
     Login: { screen: LoginScreen },
     Signup: { screen: SignupScreen },
     ForgotPassword: { screen: ForgotPasswordScreen },
-
     Main: { screen: MainTabNavigator, },
   },
   {

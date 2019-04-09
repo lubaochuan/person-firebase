@@ -18,13 +18,13 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch(action.type) {
-        case "setFavoriteAnimal": 
+        case "setFavoriteAnimal":
             return { ...state, favoriteAnimal: action.value };
 
         case "setPersonData":
             return { ...state, personData: action.value };
 
-        default: 
+        default:
             return state;
     }
 };
@@ -47,6 +47,20 @@ const setFavoriteAnimal = (favoriteAnimal) => {
     };
 }
 
+const setFirstName = (firstName) => {
+  return function(dispatch) {
+      firebase.database().ref("person").update(
+        {"firstName": firstName});
+  };
+}
+
+const setLastName = (lastName) => {
+  return function(dispatch) {
+      firebase.database().ref("person").update(
+        {"lastName": lastName});
+  };
+}
+
 const setPersonData = (personData) => {
     return {
         type: "setPersonData",
@@ -63,4 +77,4 @@ const watchPersonData = () => {
     };
 }
 
-export { setFavoriteAnimal, setPersonData, watchPersonData };
+export { setFavoriteAnimal, setFirstName, setLastName, setPersonData, watchPersonData };
