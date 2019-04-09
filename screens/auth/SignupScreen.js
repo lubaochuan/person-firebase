@@ -8,7 +8,7 @@ export default class SignupScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             email: "",
             password: "",
             passwordConfirm: "",
@@ -26,11 +26,7 @@ export default class SignupScreen extends React.Component {
     }
 
     onBackToLoginPress = () => {
-        var navActions = NavigationActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({routeName: "Login"})]
-        });
-        this.props.navigation.dispatch(navActions);
+        this.props.navigation.goBack();
     }
 
     render() {

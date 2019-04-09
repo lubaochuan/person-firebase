@@ -8,7 +8,7 @@ export default class LoginScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             email: "",
             password: "",
         };
@@ -20,26 +20,18 @@ export default class LoginScreen extends React.Component {
     }
 
     onCreateAccountPress = () => {
-        var navActions = NavigationActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({routeName: "Signup"})]
-        });
-        this.props.navigation.dispatch(navActions);
+        this.props.navigation.navigate("Signup");
     }
 
     onForgotPasswordPress = () => {
-        var navActions = NavigationActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({routeName: "ForgotPassword"})]
-        });
-        this.props.navigation.dispatch(navActions);
+        this.props.navigation.navigate("ForgotPassword");
     }
 
     render() {
         return (
             <View style={{paddingTop:50, alignItems:"center"}}>
 
-                <Text>Login</Text> 
+                <Text>Login</Text>
 
                 <TextInput style={{width: 200, height: 40, borderWidth: 1}}
                     value={this.state.email}
